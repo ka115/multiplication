@@ -29,14 +29,6 @@
                 font-size: 20px;
                 color: black;
             }
-            /*.column-txt{*/
-                /*color: white;*/
-                /*font-size: 20px;*/
-            /*}*/
-            /*.column-txt-mul{*/
-                /*font-size: 20px;*/
-                /*color: black;*/
-            /*}*/
             .card{
                 margin: 15px;
                 padding: 15px;
@@ -106,7 +98,6 @@
         <?php
         function addMultiplication()
         {
-//            $errMsg = '';
             $start_number = $_POST['start_number'];
             $end_number = $_POST['end_number'];
             if (isset($_REQUEST['submit'])) {
@@ -125,17 +116,13 @@
                                 <?php for ($j = $start_number; $j <= $end_number; $j++) { ?>
                                     <div class="col-md-2" style="padding: 15px;">
                                         <div class="table-column">
-<!--                                            <span class="column-txt">-->
                                                 <?php echo $j."<br>" ?>
-<!--                                            </span>-->
                                         </div>
                                         <div class="table-column-txt">
                                             <?php for ($i = 1; $i <= 10; $i++) {
                                                 $num1 = $j * $i;
                                             ?>
-<!--                                                <span class="column-txt-mul">-->
                                                     <?php echo "$j * $i = $num1 <br>" ?>
-<!--                                                </span>-->
                                             <?php } ?>
                                         </div>
                                     </div>
